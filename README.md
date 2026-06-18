@@ -30,7 +30,7 @@ This structure supports clean separation of concerns.
 - Sticky header with navigation
 - Subscribe form 
 - Contact form
-- Connection with backend through API
+- Connection with backend through API (VITE_API_URL needs to be set in .env)
 
 ---
 
