@@ -38,6 +38,8 @@ export default function SuccessPage() {
           setStatus("Your heavenly scented perfumes have been ordered!");
           setIsPaid(true);
           clearCart();
+          // Clear saved email from sessionStorage on successful payment
+          sessionStorage.removeItem("checkoutEmail");
         } else {
           setStatus("Payment is being processed…");
           // Check again after a few seconds

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../contexts/CartContext";
 import { useProducts } from "../contexts/ProductContext";
@@ -12,6 +12,14 @@ export default function CartPage() {
   const [emailError, setEmailError] = useState("");
   const [checkoutError, setCheckoutError] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
+
+  // Restore email from sessionStorage on mount
+  useEffect(() => {
+    const savedEmail = sessionStorage.getItem("checkoutEmail");
+    if (savedEmail) {
+      setEmail(savedEmail);
+    }
+  }, []);
 
   function findProduct(productId) {
     return products.find((p) => p.id === productId);
@@ -100,6 +108,9 @@ export default function CartPage() {
       }
 
       const { url } = await checkoutResponse.json();
+
+      // Save email to sessionStorage before redirecting
+      sessionStorage.setItem("checkoutEmail", email);
 
       // Step 3: Redirect to Stripe checkout
       window.location.href = url;
