@@ -12,7 +12,7 @@
 
 - **Components** → UI building blocks  
 - **Pages** → route-level screens  
-- **Contexts** → global state (auth, cart, products)  
+- **Contexts** → global state (cart)  
 - **Layouts** → shared page chrome  
 - **Routes** → navigation logic  
 - **Assets** → images
