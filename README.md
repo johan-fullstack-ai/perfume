@@ -41,7 +41,7 @@ React + Vite + pnpm + GitHub Pages
 ## 🧾 Credits
 
 Development:
-Built by Johan Granvinge, expanding the original concept into a full React application with modern architecture.
+Built by Johan Granvinge, developing a React application with modern architecture.
 
 Guidance & Support:  
 Github Copilot.
