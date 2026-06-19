@@ -103,8 +103,8 @@ export default function Cart() {
               required
               disabled={isProcessing}
             />
-            {emailError && <p className="subscribeError">{emailError}</p>}
-            {checkoutError && <p className="subscribeError">{checkoutError}</p>}
+            {emailError && <p className="formError">{emailError}</p>}
+            {checkoutError && <p className="formError">{checkoutError}</p>}
             <br /><br />
           </div>
 

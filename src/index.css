@@ -11,6 +11,7 @@
   --chocolate: #5A3E36;
   --cream: #FFF7F2;
   --soft-yellow: #FCE7A0;
+  --dark-red: #b00020;
   --font-heading: "Baloo 2", cursive;
   --font-accent: "Pacifico", cursive;
   --font-body: "Nunito", sans-serif;
@@ -443,7 +444,7 @@ ul {
 }
 
 .formError {
-  color: var(--deep-pink);
+  color: var(--dark-red);
   font-size: 0.85rem;
   font-weight: 600;
 }

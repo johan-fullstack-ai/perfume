@@ -29,7 +29,7 @@ export default function SubscribeForm() {
   }
 
   return (
-    <form className="subscribeForm" onSubmit={handleSubmit}>
+    <form className="subscribeForm" onSubmit={handleSubmit} noValidate>
       <label htmlFor="subscribeEmail" className="subscribeLabel">
         Stay updated
       </label>
