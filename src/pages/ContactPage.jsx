@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { validateEmail } from "../utils/emailValidation";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -10,8 +11,7 @@ export default function ContactPage() {
     if (!formData.name.trim()) {
       newErrors.name = "Name is required.";
     }
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(formData.email)) {
+    if (!validateEmail(formData.email)) {
       newErrors.email = "Please enter a valid email address.";
     }
     if (!formData.message.trim()) {

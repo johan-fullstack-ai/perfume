@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
-const CART_KEY = "munamii_cart_v1";
+const CART_KEY = "perfume_cart_v1";
 
 function loadCart() {
   try {

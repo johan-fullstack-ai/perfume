@@ -1,5 +1,6 @@
 import { useState, useEffect} from "react";
 import { useLocation } from "react-router-dom";
+import { validateEmail } from "../utils/emailValidation";
 
 export default function SubscribeForm() {
   const [email, setEmail] = useState("");
@@ -18,8 +19,7 @@ export default function SubscribeForm() {
     setError("");
     setMessage("");
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
+    if (!validateEmail(email)) {
       setError("Please enter a valid email address.");
       return;
     }
