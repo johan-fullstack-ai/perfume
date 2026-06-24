@@ -745,44 +745,6 @@ ul {
   color: var(--chocolate);
 }
 
-/* ── Admin Section ─────────────────────────────────────────── */
-.adminSection {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 60px 16px;
-  text-align: center;
-}
-
-.adminWelcome {
-  font-size: 1.1rem;
-  margin-top: 8px;
-  margin-bottom: 24px;
-}
-
-.adminActions {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.adminForm {
-  max-width: 480px;
-  margin: 24px auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  text-align: left;
-}
-
-.adminFormWrapper {
-  margin-bottom: 48px;
-}
-
-.adminProductList {
-  margin-top: 32px;
-}
-
 /* ── Not Found Page ────────────────────────────────────────── */
 .notFoundSection {
   max-width: 600px;

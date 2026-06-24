@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useCart } from "../contexts/CartContext";
 import logo from "../assets/images/logo.png";
-import { useAuth } from "../contexts/AuthContext";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +10,6 @@ export default function Header() {
   function handleNavClick() {
     setMenuOpen(false);
   }
-
-  const { isAdmin } = useAuth();
 
   return (
     <header className="siteHeader">
